@@ -22,8 +22,11 @@ public class Main {
         brackets.put('}', '{');
         brackets.put(']', '[');
         LinkedList<Character> characters = new LinkedList<>();
+        if (s.toCharArray().length % 2 != 0) {
+            return false;
+        }
         for (char character : s.toCharArray()) {
-            if(isOpenSymbol(character, brackets)) {
+            if (isOpenSymbol(character, brackets)) {
                 characters.add(character);
             } else if (isBackSymbol(character, brackets)) {
                 if (!characters.isEmpty() && brackets.get(character).equals(characters.getLast())) {
@@ -35,10 +38,12 @@ public class Main {
         }
         return characters.isEmpty();
     }
-    private static boolean isBackSymbol(Character character,Map<Character, Character> brackets) {
+
+    private static boolean isBackSymbol(Character character, Map<Character, Character> brackets) {
         return brackets.containsKey(character);
     }
+
     private static boolean isOpenSymbol(Character character, Map<Character, Character> brackets) {
-       return brackets.containsValue(character);
+        return brackets.containsValue(character);
     }
 }
