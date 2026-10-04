@@ -1,11 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-/*
-https://leetcode.com/problems/palindrome-number/
-9. Palindrome Number
-*/
-public class IsPalindrome {
+public class Main {
     public static void main(String[] args) {
         System.out.println(isPalindrome(1210));
         System.out.println(isPalindrome(121));

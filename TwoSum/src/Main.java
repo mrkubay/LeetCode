@@ -1,13 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 
-/*
-https://leetcode.com/problems/two-sum/description/
-Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
-You may assume that each input would have exactly one solution, and you may not use the same element twice.
-*/
-public class TwoSum {
-
+public class Main {
     public static void main(String[] args) {
         int[] result1 = twoSumMap(new int[]{2, 11, 15, 7}, 9);
         int[] result2 = twoSumMap(new int[]{3, 2, 3}, 6);
