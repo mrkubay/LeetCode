@@ -5,6 +5,7 @@ public class Main {
         System.out.println(resultMethod("A man, a plan, a canal: Panama"));
         System.out.println(resultMethod("race a car"));
         System.out.println(resultMethod(""));
+        System.out.println(resultMethod(" "));
     }
 
     private static boolean resultMethod(String input) {
